@@ -20,17 +20,7 @@ class Task(db.Model):
     def __init__(self, name):
         self.name = name
 
-
-# tasks = []
-# results = db.session.execute(select([Task]))
-
-# tasks = []
-
 tasks = []
-
-# for i in results:
-#     tasks.append(i[1])
-    # print(i[1])
 
 
 @app.route('/', methods=['POST', 'GET'])
